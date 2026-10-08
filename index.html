@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CHRIS — Community Manager & Créateur de contenu · Montpellier</title>
-<meta name="description" content="Community Manager et créateur de contenu UGC à Montpellier. Stratégie, audit, gestion de compte et création de contenu.">
+<title>CHRIS — Community Manager & Créateur de contenu · Montpellier & Bordeaux</title>
+<meta name="description" content="Community Manager et créateur de contenu UGC à Montpellier &amp; Bordeaux. Stratégie, audit, gestion de compte et création de contenu.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Archivo:wght@200;300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap">
@@ -26,7 +26,7 @@
   .pill.solid{background:var(--gold);color:var(--navy);border-color:var(--gold);}
   .pill.solid:hover{background:var(--cream);border-color:var(--cream);color:var(--navy);}
   h1,h2,h3{margin:0;font-family:var(--display);font-weight:500;}
-  .section{padding:120px 0;position:relative;}
+  .section{padding:100px 0;position:relative;}
   .section-cream{background:var(--cream);color:var(--navy);}
   .section-cream .eyebrow{color:#8a6a3a;}
   .label-num{font-family:var(--display);font-size:13px;letter-spacing:.3em;color:var(--gold);}
@@ -51,17 +51,17 @@
   @media(max-width:980px){.hero-grid{grid-template-columns:1fr;}}
   .hero h1{font-size:clamp(38px,5.6vw,78px);line-height:1.02;}
   .hero h1 em{display:block;font-family:var(--italic);font-style:italic;font-weight:300;color:var(--gold);font-size:clamp(26px,3.8vw,56px);margin-top:.3em;}
-  .hero p{font-size:16px;line-height:1.7;color:var(--cream-dim);max-width:480px;margin:28px 0 36px;}
+  .hero p{font-size:17.5px;line-height:1.7;color:var(--cream-dim);max-width:500px;margin:28px 0 36px;}
   .hero p b{color:var(--cream);font-weight:500;}
   .hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:46px;}
   .hero-stats{display:flex;gap:40px;border-top:1px solid rgba(244,239,230,0.14);padding-top:26px;flex-wrap:wrap;}
-  .hero-stats .n{font-family:var(--display);font-size:clamp(26px,3vw,38px);color:var(--gold);}
-  .hero-stats .l{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:6px;}
-  .hero-visual{position:relative;aspect-ratio:9/15;max-width:340px;margin:0 auto;border:1px solid var(--navy2);box-shadow:0 40px 90px rgba(0,0,0,0.55);overflow:hidden;border-radius:4px;}
+  .hero-stats .n{font-family:var(--display);font-size:clamp(28px,3.2vw,40px);color:var(--gold);}
+  .hero-stats .l{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:6px;}
+  .hero-visual{position:relative;aspect-ratio:9/15;max-width:400px;margin:0 auto;border:1px solid var(--navy2);box-shadow:0 40px 90px rgba(0,0,0,0.55);overflow:hidden;border-radius:4px;}
   .hero-visual img{width:100%;height:100%;object-fit:cover;filter:grayscale(10%) contrast(1.02);}
   .marquee-wrap{overflow:hidden;border-top:1px solid rgba(244,239,230,0.1);border-bottom:1px solid rgba(244,239,230,0.1);padding:18px 0;white-space:nowrap;}
-  .marquee{display:inline-block;animation:marquee 32s linear infinite;font-family:var(--display);font-size:16px;letter-spacing:.05em;color:rgba(232,213,176,0.3);}
-  .marquee b{color:var(--gold);}
+  .marquee{display:inline-block;animation:marquee 32s linear infinite;font-family:var(--display);font-size:16px;letter-spacing:.05em;color:var(--gold);}
+  .marquee b{color:var(--gold);font-weight:inherit;}
   .marquee span{margin:0 18px;}
   @keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 
@@ -70,11 +70,13 @@
   [data-reveal].in{opacity:1;transform:translateY(0);}
 
   /* --- section headers --- */
-  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:56px;flex-wrap:wrap;}
+  .sec-head{display:flex;flex-direction:column;align-items:flex-start;gap:16px;margin-bottom:56px;}
   .sec-head h2{font-size:clamp(30px,4vw,52px);}
   .sec-head h2 em{font-style:italic;font-family:var(--italic);color:var(--gold);}
-  .sec-head p{max-width:380px;font-size:14.5px;line-height:1.7;color:var(--cream-dim);}
+  .sec-head p{max-width:620px;font-size:16.5px;line-height:1.75;color:var(--cream-dim);}
+  .sec-head p b{color:var(--gold);font-weight:500;}
   .section-cream .sec-head p{color:rgba(13,27,42,0.65);}
+  .section-cream .sec-head p b{color:#8a6a3a;}
 
   /* --- method cards (onboarding) --- */
   .method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
@@ -120,6 +122,13 @@
   .ugc-card .tag{position:absolute;left:10px;top:10px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;background:rgba(13,27,42,0.7);border:1px solid rgba(198,161,91,0.5);color:var(--gold);padding:5px 10px;border-radius:999px;}
   .ugc-card .badge{position:absolute;right:10px;top:10px;font-size:9px;letter-spacing:.1em;text-transform:uppercase;background:var(--gold);color:var(--navy);padding:5px 9px;border-radius:999px;font-weight:600;}
   .ugc-card .cap{position:absolute;left:0;right:0;bottom:0;padding:14px 12px;background:linear-gradient(to top, rgba(13,27,42,0.92), transparent);font-family:var(--display);font-size:13px;}
+  .play-ov{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(13,27,42,0.4);cursor:pointer;transition:opacity .3s;z-index:3;}
+  .play-ov svg{width:40px;height:40px;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.5));}
+  .is-playing .play-ov{opacity:0;pointer-events:none;}
+  .sound-btn{position:absolute;right:10px;bottom:10px;width:28px;height:28px;border-radius:50%;border:1px solid rgba(244,239,230,0.4);background:rgba(13,27,42,0.6);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:4;transition:border-color .3s;}
+  .sound-btn:hover{border-color:var(--gold);}
+  .sound-btn svg{width:13px;height:13px;}
+  .case-visual .frame{position:relative;}
 
   /* --- case study / gestion de compte --- */
   .case-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;align-items:center;}
@@ -129,9 +138,9 @@
   .case-visual img,.case-visual video{width:100%;display:block;}
   .case-tag{display:inline-block;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(198,161,91,0.4);border-radius:999px;padding:7px 16px;margin-bottom:18px;}
   .case-text h3{font-size:clamp(26px,3.4vw,40px);margin-bottom:18px;}
-  .case-text p{font-size:14.5px;line-height:1.8;color:var(--cream-dim);margin-bottom:14px;}
+  .case-text p{font-size:15.5px;line-height:1.8;color:var(--cream-dim);margin-bottom:14px;}
   .case-list{display:flex;flex-direction:column;gap:10px;margin:22px 0;}
-  .case-list div{display:flex;gap:10px;font-size:13.5px;color:var(--cream-dim);align-items:flex-start;}
+  .case-list div{display:flex;gap:10px;font-size:14.5px;color:var(--cream-dim);align-items:flex-start;}
   .case-list div b{color:var(--gold);font-family:var(--display);flex-shrink:0;}
   .case-note{font-size:11.5px;color:rgba(244,239,230,0.4);font-style:italic;margin-top:18px;}
 
@@ -162,22 +171,27 @@
   .serv-card{background:#fff;border:1px solid rgba(13,27,42,0.08);border-radius:3px;padding:32px 26px;transition:transform .35s,box-shadow .35s;}
   .serv-card:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(13,27,42,0.12);}
   .serv-card .ic{width:34px;height:34px;border-radius:50%;background:rgba(198,161,91,0.15);display:flex;align-items:center;justify-content:center;color:#8a6a3a;margin-bottom:18px;font-family:var(--display);font-size:14px;}
-  .serv-card h3{font-size:18px;margin-bottom:10px;}
-  .serv-card p{font-size:13px;line-height:1.7;color:rgba(13,27,42,0.6);}
+  .serv-card h3{font-size:19px;margin-bottom:10px;}
+  .serv-card p{font-size:14px;line-height:1.7;color:rgba(13,27,42,0.6);}
+  .serv-block{margin-bottom:46px;}
+  .serv-block:last-child{margin-bottom:0;}
+  .serv-block-label{display:flex;align-items:baseline;gap:14px;margin-bottom:22px;flex-wrap:wrap;}
+  .serv-block-label h3{font-family:var(--display);font-size:22px;color:var(--navy);}
+  .serv-block-label span{font-size:13px;color:rgba(13,27,42,0.55);}
 
   /* --- about --- */
-  .about-grid{display:grid;grid-template-columns:0.8fr 1.2fr;gap:56px;align-items:center;}
+  .about-grid{display:grid;grid-template-columns:0.95fr 1.05fr;gap:56px;align-items:center;}
   @media(max-width:900px){.about-grid{grid-template-columns:1fr;}}
-  .about-grid img{border-radius:4px;filter:grayscale(8%) contrast(1.02);}
+  .about-grid img{border-radius:4px;filter:grayscale(8%) contrast(1.02);width:100%;object-fit:cover;max-height:560px;}
   .about-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;}
-  .about-tags span{font-size:11px;letter-spacing:.1em;text-transform:uppercase;border:1px solid rgba(244,239,230,0.2);border-radius:999px;padding:8px 16px;color:var(--cream-dim);}
+  .about-tags span{font-size:12px;letter-spacing:.1em;text-transform:uppercase;border:1px solid rgba(244,239,230,0.2);border-radius:999px;padding:9px 18px;color:var(--cream-dim);}
 
   /* --- footer --- */
   footer{padding:90px 0 40px;text-align:center;}
   footer h2{font-size:clamp(30px,4.6vw,56px);margin-bottom:28px;}
   footer h2 em{font-style:italic;font-family:var(--italic);color:var(--gold);}
   .footer-ctas{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:56px;}
-  .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;border-top:1px solid rgba(244,239,230,0.1);padding-top:28px;font-size:11px;letter-spacing:.08em;color:rgba(244,239,230,0.35);}
+  .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;border-top:1px solid rgba(244,239,230,0.1);padding-top:28px;font-size:12.5px;letter-spacing:.08em;color:rgba(244,239,230,0.4);}
   .footer-bottom a{color:var(--gold);}
 </style>
 </head>
@@ -199,7 +213,7 @@
   <div class="hero-watermark">CM</div>
   <div class="wrap hero-grid">
     <div data-reveal>
-      <div class="eyebrow">Chris — Montpellier</div>
+      <div class="eyebrow">Chris — Montpellier & Bordeaux</div>
       <h1>Community<br>Manager<em>& créateur de contenu</em></h1>
       <p>Je ne me contente pas de piloter votre stratégie sociale : <b>j'audite, je planifie et je produis</b> aussi le contenu qui va avec. Un seul interlocuteur, de l'onboarding à la publication.</p>
       <div class="hero-ctas">
@@ -209,7 +223,7 @@
       </div>
       <div class="hero-stats">
         <div><div class="n"><span data-counter="4">0</span></div><div class="l">Compétences clés</div></div>
-        <div><div class="n"><span data-counter="100" data-suffix="K+">0</span></div><div class="l">Vues · contenu créé</div></div>
+        <div><div class="n"><span data-counter="130" data-suffix="K+">0</span></div><div class="l">Vues · contenu créé</div></div>
         <div><div class="n">UGC<span style="color:var(--cream)">+</span>CM</div><div class="l">Double compétence</div></div>
       </div>
     </div>
@@ -221,7 +235,7 @@
 
 <div class="marquee-wrap">
   <div class="marquee">
-    <span><b>STRATÉGIE</b></span><span>AUDIT</span><span><b>CALENDRIER ÉDITORIAL</b></span><span>COMMUNITY MANAGEMENT</span><span><b>CRÉATION UGC</b></span><span>REPORTING</span><span><b>MONTPELLIER</b></span><span>STRATÉGIE</span><span><b>AUDIT</b></span><span>CALENDRIER ÉDITORIAL</span><span><b>COMMUNITY MANAGEMENT</b></span><span>CRÉATION UGC</span><span><b>REPORTING</b></span><span>MONTPELLIER</span>
+    <span><b>STRATÉGIE</b></span><span>AUDIT</span><span><b>CALENDRIER ÉDITORIAL</b></span><span>COMMUNITY MANAGEMENT</span><span><b>CRÉATION UGC</b></span><span>REPORTING</span><span><b>MONTPELLIER &amp; BORDEAUX</b></span><span>STRATÉGIE</span><span><b>AUDIT</b></span><span>CALENDRIER ÉDITORIAL</span><span><b>COMMUNITY MANAGEMENT</b></span><span>CRÉATION UGC</span><span><b>REPORTING</b></span><span>MONTPELLIER &amp; BORDEAUX</span>
   </div>
 </div>
 
@@ -230,7 +244,7 @@
   <div class="wrap">
     <div class="sec-head" data-reveal>
       <h2>Comment je <em>travaille.</em></h2>
-      <p>Chaque collaboration démarre par le même socle : comprendre le compte avant d'y toucher. Clique sur une étape pour voir à quoi ressemble concrètement le document que je produis.</p>
+      <p>Chaque collaboration démarre par le même socle : comprendre le compte avant d'y toucher. Clique sur une étape pour découvrir <b>le document concret</b> que je produis à chaque fois.</p>
     </div>
     <div class="method-grid">
       <div class="method-card" data-reveal data-reveal-delay="0" data-modal="audit">
@@ -266,33 +280,44 @@
   <div class="wrap">
     <div class="sec-head" data-reveal>
       <h2>Je crée aussi <em>le contenu.</em></h2>
-      <p>En plus de la stratégie, je tourne et monte des vidéos UGC — un vrai plus pour un compte qui a besoin de matière fraîche sans multiplier les prestataires.</p>
+      <p>En plus de la stratégie, je tourne et monte moi-même des vidéos UGC, pour apporter à votre compte <b>une matière fraîche et authentique</b>, sans multiplier les prestataires.</p>
     </div>
     <div class="ugc-grid">
       <div class="ugc-card" data-reveal data-reveal-delay="0">
         <span class="tag">Réminiscence</span>
-        <video src="videos/03-reminiscence.mp4" muted loop playsinline autoplay></video>
+        <span class="badge">130K+ vues</span>
+        <video src="videos/03-reminiscence.mp4" muted loop playsinline></video>
+        <span class="play-ov" data-role="play"><svg viewBox="0 0 24 24" fill="#F4EFE6"><polygon points="7,4 20,12 7,20"/></svg></span>
+        <button class="sound-btn" type="button" data-role="sound" aria-label="Activer le son"><svg viewBox="0 0 24 24" fill="none" stroke="#F4EFE6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 9 3 15 8 15 13 20 13 4 8 9 3 9"></polygon><line x1="16" y1="9" x2="22" y2="15"></line><line x1="22" y1="9" x2="16" y2="15"></line></svg></button>
         <div class="cap">Réminiscence</div>
       </div>
       <div class="ugc-card" data-reveal data-reveal-delay="80">
         <span class="tag">Pizza Cosy</span>
-        <video src="videos/02-pizzacosy.mp4" muted loop playsinline autoplay></video>
+        <video src="videos/02-pizzacosy.mp4" muted loop playsinline></video>
+        <span class="play-ov" data-role="play"><svg viewBox="0 0 24 24" fill="#F4EFE6"><polygon points="7,4 20,12 7,20"/></svg></span>
+        <button class="sound-btn" type="button" data-role="sound" aria-label="Activer le son"><svg viewBox="0 0 24 24" fill="none" stroke="#F4EFE6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 9 3 15 8 15 13 20 13 4 8 9 3 9"></polygon><line x1="16" y1="9" x2="22" y2="15"></line><line x1="22" y1="9" x2="16" y2="15"></line></svg></button>
         <div class="cap">Pizza Cosy</div>
       </div>
       <div class="ugc-card" data-reveal data-reveal-delay="160">
         <span class="tag">Bernimois</span>
         <span class="badge">100K+ vues</span>
-        <video src="videos/15-bernimois.mp4" muted loop playsinline autoplay></video>
+        <video src="videos/15-bernimois.mp4" muted loop playsinline></video>
+        <span class="play-ov" data-role="play"><svg viewBox="0 0 24 24" fill="#F4EFE6"><polygon points="7,4 20,12 7,20"/></svg></span>
+        <button class="sound-btn" type="button" data-role="sound" aria-label="Activer le son"><svg viewBox="0 0 24 24" fill="none" stroke="#F4EFE6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 9 3 15 8 15 13 20 13 4 8 9 3 9"></polygon><line x1="16" y1="9" x2="22" y2="15"></line><line x1="22" y1="9" x2="16" y2="15"></line></svg></button>
         <div class="cap">Bernimois · Ouverture</div>
       </div>
       <div class="ugc-card" data-reveal data-reveal-delay="240">
         <span class="tag">Deezer</span>
-        <video src="videos/05-deezer.mp4" muted loop playsinline autoplay></video>
+        <video src="videos/05-deezer.mp4" muted loop playsinline></video>
+        <span class="play-ov" data-role="play"><svg viewBox="0 0 24 24" fill="#F4EFE6"><polygon points="7,4 20,12 7,20"/></svg></span>
+        <button class="sound-btn" type="button" data-role="sound" aria-label="Activer le son"><svg viewBox="0 0 24 24" fill="none" stroke="#F4EFE6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 9 3 15 8 15 13 20 13 4 8 9 3 9"></polygon><line x1="16" y1="9" x2="22" y2="15"></line><line x1="22" y1="9" x2="16" y2="15"></line></svg></button>
         <div class="cap">Deezer</div>
       </div>
       <div class="ugc-card" data-reveal data-reveal-delay="320">
         <span class="tag">La Bouclette</span>
-        <video src="videos/17-labouclette.mp4" muted loop playsinline autoplay></video>
+        <video src="videos/17-labouclette.mp4" muted loop playsinline></video>
+        <span class="play-ov" data-role="play"><svg viewBox="0 0 24 24" fill="#F4EFE6"><polygon points="7,4 20,12 7,20"/></svg></span>
+        <button class="sound-btn" type="button" data-role="sound" aria-label="Activer le son"><svg viewBox="0 0 24 24" fill="none" stroke="#F4EFE6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 9 3 15 8 15 13 20 13 4 8 9 3 9"></polygon><line x1="16" y1="9" x2="22" y2="15"></line><line x1="22" y1="9" x2="16" y2="15"></line></svg></button>
         <div class="cap">La Bouclette</div>
       </div>
     </div>
@@ -304,13 +329,15 @@
   <div class="wrap case-grid">
     <div class="case-visual" data-reveal>
       <div class="frame">
-        <video src="videos/20-traiteur.mp4" muted loop playsinline autoplay></video>
+        <video src="videos/20-traiteur.mp4" muted loop playsinline></video>
+        <span class="play-ov" data-role="play"><svg viewBox="0 0 24 24" fill="#F4EFE6"><polygon points="7,4 20,12 7,20"/></svg></span>
+        <button class="sound-btn" type="button" data-role="sound" aria-label="Activer le son"><svg viewBox="0 0 24 24" fill="none" stroke="#F4EFE6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 9 3 15 8 15 13 20 13 4 8 9 3 9"></polygon><line x1="16" y1="9" x2="22" y2="15"></line><line x1="22" y1="9" x2="16" y2="15"></line></svg></button>
       </div>
     </div>
     <div class="case-text" data-reveal data-reveal-delay="150">
       <span class="case-tag">Cas concret — Gestion de compte</span>
       <h3>L'Original Traiteur</h3>
-      <p>Au-delà du tournage, j'ai travaillé la direction artistique globale du compte : cohérence des couleurs, cadrages et rythme de publication, pour que chaque contenu — vidéo, photo plat, portrait d'équipe ou affiche d'événement — soit immédiatement identifiable comme venant du même restaurant.</p>
+      <p>Au-delà du tournage, j'ai travaillé la direction artistique globale du compte : cohérence des couleurs, cadrages et rythme de publication, pour que chaque contenu, qu'il s'agisse d'une vidéo, d'une photo plat, d'un portrait d'équipe ou d'une affiche d'événement, soit immédiatement identifiable comme venant du même restaurant.</p>
       <div class="case-list">
         <div><b>01</b> Identité visuelle appliquée à l'ensemble du feed (cuisine maison, événements, équipe)</div>
         <div><b>02</b> Mise en valeur des produits en situation réelle, du plat à l'assiette au service traiteur</div>
@@ -348,15 +375,25 @@
   <div class="wrap">
     <div class="sec-head" data-reveal>
       <h2>Services.</h2>
-      <p>Une gestion de compte complète, de l'audit initial à la création de contenu.</p>
+      <p>Une gestion de compte complète, de l'onboarding jusqu'au travail opérationnel du mois, avec <b>un seul interlocuteur</b> du début à la fin.</p>
     </div>
-    <div class="serv-grid">
-      <div class="serv-card" data-reveal data-reveal-delay="0"><div class="ic">01</div><h3>Audit</h3><p>État des lieux complet du compte : profil, contenu, engagement, communauté.</p></div>
-      <div class="serv-card" data-reveal data-reveal-delay="80"><div class="ic">02</div><h3>Stratégie</h3><p>Définition des objectifs, de l'audience cible et des piliers de contenu.</p></div>
-      <div class="serv-card" data-reveal data-reveal-delay="160"><div class="ic">03</div><h3>Community management</h3><p>Gestion quotidienne : publications, stories, modération, interactions.</p></div>
-      <div class="serv-card" data-reveal data-reveal-delay="0"><div class="ic">04</div><h3>Création de contenu</h3><p>Tournage et montage de vidéos UGC adaptées à votre univers de marque.</p></div>
-      <div class="serv-card" data-reveal data-reveal-delay="80"><div class="ic">05</div><h3>Calendrier éditorial</h3><p>Planification du contenu en amont, format par format, semaine par semaine.</p></div>
-      <div class="serv-card" data-reveal data-reveal-delay="160"><div class="ic">06</div><h3>Reporting</h3><p>Analyse mensuelle des statistiques et ajustement continu de la stratégie.</p></div>
+
+    <div class="serv-block">
+      <div class="serv-block-label" data-reveal><h3>Onboarding</h3><span>La prise d'informations et la construction du cadre</span></div>
+      <div class="serv-grid">
+        <div class="serv-card" data-reveal data-reveal-delay="0"><div class="ic">01</div><h3>Audit</h3><p>État des lieux complet du compte : profil, contenu, engagement, communauté.</p></div>
+        <div class="serv-card" data-reveal data-reveal-delay="80"><div class="ic">02</div><h3>Stratégie</h3><p>Création de la stratégie si elle n'existe pas encore, ou restructuration complète si elle est déjà en place.</p></div>
+        <div class="serv-card" data-reveal data-reveal-delay="160"><div class="ic">03</div><h3>Calendrier éditorial</h3><p>Planification du contenu en amont, format par format, semaine par semaine.</p></div>
+      </div>
+    </div>
+
+    <div class="serv-block">
+      <div class="serv-block-label" data-reveal><h3>Opérationnel</h3><span>Le travail mené au quotidien, une fois le cadre posé</span></div>
+      <div class="serv-grid">
+        <div class="serv-card" data-reveal data-reveal-delay="0"><div class="ic">04</div><h3>Community management</h3><p>Gestion quotidienne : publications, stories, modération, interactions.</p></div>
+        <div class="serv-card" data-reveal data-reveal-delay="80"><div class="ic">05</div><h3>Création de contenu</h3><p>Tournage et montage de vidéos UGC adaptées à votre univers de marque.</p></div>
+        <div class="serv-card" data-reveal data-reveal-delay="160"><div class="ic">06</div><h3>Reporting</h3><p>Analyse mensuelle des statistiques et ajustement continu de la stratégie.</p></div>
+      </div>
     </div>
   </div>
 </section>
@@ -368,9 +405,9 @@
     <div data-reveal data-reveal-delay="150">
       <div class="eyebrow">À propos</div>
       <h2 style="font-size:clamp(28px,3.6vw,44px);margin-top:14px;">Un seul interlocuteur, <em style="font-style:italic;font-family:var(--italic);color:var(--gold);">stratégie et création.</em></h2>
-      <p style="font-size:14.5px;line-height:1.8;color:var(--cream-dim);max-width:460px;margin-top:20px;">Basé à Montpellier, je travaille avec des petites structures qui veulent une gestion de réseaux sociaux cohérente — sans jongler entre un community manager et un créateur de contenu séparés.</p>
+      <p style="font-size:16px;line-height:1.8;color:var(--cream-dim);max-width:500px;margin-top:20px;">Basé à Montpellier et Bordeaux, je travaille avec des petites structures qui veulent une gestion de réseaux sociaux cohérente, sans jongler entre un community manager et un créateur de contenu séparés.</p>
       <div class="about-tags">
-        <span>Organisée</span><span>Réactive</span><span>Créative</span><span>Data-driven</span>
+        <span>Créatif</span><span>Réactif</span><span>Organisé</span><span>Autonome</span>
       </div>
     </div>
   </div>
@@ -385,8 +422,8 @@
       <a href="https://instagram.com/christo.dias" target="_blank" rel="noopener" class="pill">Instagram</a>
     </div>
     <div class="footer-bottom">
-      <span>Chris — Montpellier · 2026</span>
-      <span>Voir aussi mon <a href="https://portfolio-ugc-pi.vercel.app/" target="_blank" rel="noopener">portfolio UGC</a></span>
+      <span>Chris — Montpellier &amp; Bordeaux · 2026</span>
+      <span style="font-size:13px;">Voir aussi mon <a href="https://portfolio-ugc-pi.vercel.app/" target="_blank" rel="noopener" style="font-size:13px;">portfolio UGC</a></span>
     </div>
   </div>
 </footer>
@@ -401,17 +438,25 @@
         <span class="flag">Exemple fictif — architecture type</span>
         <h4>Audit Compte Instagram</h4>
         <div class="sub">Compte : @cafe.lucine (exemple) · Date : Octobre 2026</div>
+        <p style="font-size:13.5px;line-height:1.75;color:rgba(13,27,42,0.7);margin-bottom:18px;">Avant de produire le moindre contenu, je prends deux à trois jours pour poser un état des lieux complet et objectif du compte : positionnement, identité visuelle, qualité et régularité de publication, dynamique de communauté et place face à la concurrence locale. Ce document sert de socle à toutes les décisions prises ensuite.</p>
         <div class="kpi">
           <div><b>3,2%</b><small>Taux d'engagement</small></div>
           <div><b>4 200</b><small>Abonnés</small></div>
           <div><b>3</b><small>Posts / semaine</small></div>
+          <div><b>1 100</b><small>Portée moy. / reel</small></div>
         </div>
-        <h5>Profil</h5>
-        <ul><li>Pseudo cohérent sur toutes les plateformes, facile à retrouver</li><li>Bio incomplète : objectif du compte peu clair, pas de CTA</li><li>Lien en bio non optimisé (page d'accueil générique)</li><li>Stories à la une présentes mais sans identité visuelle commune</li></ul>
-        <h5>Contenu</h5>
-        <ul><li>Thème visuel reconnaissable mais incohérence des retouches d'une photo à l'autre</li><li>Peu de formats variés : quasi uniquement du post photo, pas de reels</li><li>Qualité des visuels correcte mais sous-exploitée (peu de mise en situation produit)</li></ul>
-        <h5>Planning & communauté</h5>
-        <ul><li>Publication irrégulière, pas d'heure optimisée</li><li>Réponses aux commentaires lentes (24h+)</li><li>Aucune collaboration avec des comptes complémentaires à ce jour</li></ul>
+        <h5>Profil & identité visuelle</h5>
+        <ul><li>Pseudo cohérent sur toutes les plateformes, facile à retrouver</li><li>Bio incomplète : objectif du compte peu clair, aucun appel à l'action</li><li>Lien en bio non optimisé, redirige vers une page d'accueil générique</li><li>Stories à la une présentes mais sans identité visuelle commune (couvertures disparates)</li><li>Palette de couleurs et typographies non stabilisées entre les visuels</li></ul>
+        <h5>Contenu & formats</h5>
+        <ul><li>Thème visuel reconnaissable mais incohérence des retouches d'une photo à l'autre</li><li>Peu de formats variés, quasi uniquement du post photo, pas de reels</li><li>Qualité des visuels correcte mais sous-exploitée, peu de mise en situation produit</li><li>Légendes courtes, peu d'appel à l'interaction ou de storytelling</li></ul>
+        <h5>Planning & régularité</h5>
+        <ul><li>Publication irrégulière, aucun horaire optimisé identifié</li><li>Pas de calendrier éditorial formalisé en amont</li><li>Rythme qui dépend de la disponibilité ponctuelle de l'équipe</li></ul>
+        <h5>Communauté & engagement</h5>
+        <ul><li>Réponses aux commentaires lentes, souvent au-delà de 24h</li><li>Peu de relance en story (sondages, questions, coulisses)</li><li>Aucune collaboration avec des comptes complémentaires à ce jour</li></ul>
+        <h5>Benchmark concurrentiel</h5>
+        <ul><li>2 comptes comparables identifiés sur la zone, publiant 4 à 5 fois / semaine en reels</li><li>Écart principal : ces comptes misent sur la vidéo et les coulisses, pas seulement le produit fini</li></ul>
+        <h5>Synthèse & priorités</h5>
+        <ul><li><b>01.</b> Clarifier la bio et poser un vrai appel à l'action</li><li><b>02.</b> Introduire le reel comme format principal, dès le mois 1</li><li><b>03.</b> Fixer un calendrier et des horaires de publication stables</li><li><b>04.</b> Mettre en place une routine de réponse aux commentaires sous 4h</li></ul>
       </div>
     </div>
 
@@ -421,14 +466,21 @@
         <span class="flag">Exemple fictif — architecture type</span>
         <h4>Stratégie</h4>
         <div class="sub">Café Lucine (exemple) · Cas pédagogique</div>
-        <h5>Objectifs</h5>
-        <ul><li>Doubler le taux d'engagement en 3 mois</li><li>Faire du compte un relais de visibilité pour les événements en salle</li><li>Construire une communauté de habitués fidèles</li></ul>
+        <p style="font-size:13.5px;line-height:1.75;color:rgba(13,27,42,0.7);margin-bottom:18px;">À partir des constats de l'audit, je construis un plan concret : ce qu'on dit, à qui, avec quels formats et à quel rythme. L'objectif est qu'à tout moment, publier un contenu réponde à une question simple : quel pilier sert-il, et quel objectif fait-il avancer ?</p>
+        <h5>Objectifs (3 mois)</h5>
+        <ul><li>Doubler le taux d'engagement, de 3,2% à 6,5%</li><li>Faire du compte un relais de visibilité pour les événements en salle</li><li>Construire une communauté d'habitués fidèles, visible dans les commentaires et les partages</li></ul>
+        <h5>Positionnement & message clé</h5>
+        <ul><li>Le café vu comme un deuxième salon, chaleureux, fait-maison, animé par une équipe reconnaissable</li><li>Message central : ici, on connaît votre prénom et votre commande</li></ul>
         <h5>Audience cible</h5>
-        <ul><li>25-40 ans, actifs du quartier, sensibles au fait-maison et au cadre</li></ul>
+        <ul><li>25-40 ans, actifs du quartier, sensibles au fait-maison, au cadre et aux initiatives locales</li><li>Déclencheurs : recommandation d'un proche, événement en salle, visuel d'un plat de saison</li></ul>
         <h5>Piliers de contenu</h5>
-        <ul><li>Coulisses (préparation, équipe)</li><li>Produit (mise en avant des cartes de saison)</li><li>Communauté (avis clients, événements)</li></ul>
-        <h5>Fréquence</h5>
-        <ul><li>4 posts/semaine + 3-4 stories/jour, reels 2x/semaine</li></ul>
+        <ul><li><b>Coulisses</b> : préparation, équipe, arrivée des produits du matin</li><li><b>Produit</b> : mise en avant des cartes de saison, du grain au café</li><li><b>Communauté</b> : avis clients, portraits d'habitués, événements en salle</li><li><b>Culture</b> : anecdotes sur le quartier, partenaires locaux, petites histoires du lieu</li></ul>
+        <h5>Tonalité éditoriale</h5>
+        <ul><li>Chaleureuse et directe, jamais corporate</li><li>Légendes courtes, écrites comme on parlerait au comptoir</li></ul>
+        <h5>Fréquence & répartition</h5>
+        <ul><li>4 posts par semaine, 3 à 4 stories par jour, 2 reels par semaine minimum</li><li>Répartition visée : 40% coulisses, 30% produit, 20% communauté, 10% culture</li></ul>
+        <h5>Indicateurs de succès</h5>
+        <ul><li>Taux d'engagement, taux de sauvegarde et évolution des abonnés, suivis chaque mois en reporting</li></ul>
       </div>
     </div>
 
@@ -438,14 +490,23 @@
         <span class="flag">Exemple fictif — architecture type</span>
         <h4>Calendrier éditorial</h4>
         <div class="sub">Café Lucine (exemple) · Semaine type</div>
+        <p style="font-size:13.5px;line-height:1.75;color:rgba(13,27,42,0.7);margin-bottom:18px;">Une fois la stratégie posée, je la traduis en planning concret, semaine par semaine. Chaque publication est rattachée à un pilier de contenu et à un objectif précis, pour que le fil éditorial reste cohérent même sur plusieurs mois.</p>
+        <h5>Semaine type</h5>
         <ul>
-          <li><b>Lundi</b> — Reel « coulisses » (ouverture, préparation du jour)</li>
-          <li><b>Mercredi</b> — Post carrousel « produit » (nouveauté carte)</li>
-          <li><b>Vendredi</b> — Reel « communauté » (client régulier, avis)</li>
-          <li><b>Samedi</b> — Story « behind the scenes » événement du week-end</li>
+          <li><b>Lundi</b> Reel coulisses, ouverture et préparation du jour</li>
+          <li><b>Mardi</b> Story produit, café du jour mis en avant</li>
+          <li><b>Mercredi</b> Post carrousel produit, nouveauté de la carte</li>
+          <li><b>Jeudi</b> Story communauté, question ou sondage aux abonnés</li>
+          <li><b>Vendredi</b> Reel communauté, client régulier ou avis mis en scène</li>
+          <li><b>Samedi</b> Story behind the scenes, événement du week-end</li>
+          <li><b>Dimanche</b> Post culture, anecdote du quartier ou partenaire local</li>
         </ul>
-        <h5>Suivi</h5>
-        <ul><li>Chaque publication est liée à un pilier de contenu et un objectif précis, pour garder une cohérence sur la durée.</li></ul>
+        <h5>Méthode de construction</h5>
+        <ul><li>Les 4 piliers tournent sur la semaine selon la répartition fixée en stratégie</li><li>Chaque contenu est planifié 2 à 3 semaines à l'avance, avec une marge pour l'actualité du compte</li></ul>
+        <h5>Outils & suivi</h5>
+        <ul><li>Planning partagé avec le client, visible en temps réel</li><li>Statut de chaque contenu suivi : à tourner, en montage, validé, publié</li></ul>
+        <h5>Flexibilité</h5>
+        <ul><li>Le calendrier reste un cadre, pas une contrainte : un événement imprévu ou une tendance du moment peut toujours prendre la priorité.</li></ul>
       </div>
     </div>
 
@@ -455,15 +516,21 @@
         <span class="flag">Exemple fictif — architecture type</span>
         <h4>Reporting : analyse des statistiques</h4>
         <div class="sub">Café Lucine (exemple) · Octobre 2026</div>
+        <p style="font-size:13.5px;line-height:1.75;color:rgba(13,27,42,0.7);margin-bottom:18px;">Chaque mois, je reprends les statistiques du compte pour vérifier ce qui fonctionne vraiment et ajuster la stratégie en conséquence. Le but n'est pas d'accumuler des chiffres, mais de prendre des décisions concrètes pour le mois suivant.</p>
         <div class="kpi">
           <div><b>+38%</b><small>Portée</small></div>
           <div><b>+22%</b><small>Engagement</small></div>
           <div><b>+180</b><small>Abonnés</small></div>
+          <div><b>+45%</b><small>Sauvegardes</small></div>
         </div>
+        <h5>Performance par format</h5>
+        <ul><li>Les reels coulisses génèrent 2x plus de portée que les posts classiques</li><li>Les posts carrousel produit tiennent mieux la sauvegarde que le reste du contenu</li><li>Les stories communauté ont le meilleur taux de réponse de tous les formats</li></ul>
+        <h5>Meilleurs contenus du mois</h5>
+        <ul><li>Reel « ouverture du matin » : meilleure portée, probablement lié au son tendance utilisé</li><li>Carrousel « nouveauté de saison » : meilleur taux de sauvegarde, contenu jugé utile et réutilisable</li><li>Story « avis d'un habitué » : meilleure interaction en commentaires</li></ul>
         <h5>Analyse</h5>
-        <ul><li>Les reels « coulisses » génèrent 2x plus de portée que les posts classiques</li><li>Meilleur horaire de publication identifié : 12h-13h et 18h30-19h30</li><li>Le pilier « communauté » génère le meilleur taux de sauvegarde</li></ul>
-        <h5>Ajustements proposés</h5>
-        <ul><li>Augmenter la fréquence des reels « coulisses » à 3x/semaine</li><li>Introduire un format Q&A en story chaque vendredi</li></ul>
+        <ul><li>Meilleur horaire de publication identifié : 12h-13h et 18h30-19h30</li><li>Le pilier communauté génère le meilleur taux de sauvegarde et de partage</li><li>Les publications du week-end restent sous-performantes par rapport à la semaine</li></ul>
+        <h5>Ajustements pour le mois suivant</h5>
+        <ul><li>Augmenter la fréquence des reels coulisses à 3 par semaine</li><li>Introduire un format questions-réponses en story chaque vendredi</li><li>Décaler les publications du week-end sur des horaires plus actifs</li><li>Réutiliser le format carrousel produit, qui convertit bien en sauvegardes</li></ul>
       </div>
     </div>
 
@@ -550,11 +617,51 @@
     if (e.key === 'Escape') overlay.classList.remove('open');
   });
 
-  // Autoplay enforcement for muted videos (mobile Safari safety)
-  document.querySelectorAll('video[autoplay]').forEach(function(v){
-    v.muted = true;
-    var p = v.play();
-    if (p && p.catch) p.catch(function(){});
+  // Click-to-play + sound toggle on UGC / case videos
+  var soundOnIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="#F4EFE6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 9 3 15 8 15 13 20 13 4 8 9 3 9"></polygon><path d="M16 9a4 4 0 010 6"></path><path d="M19 7a7 7 0 010 10"></path></svg>';
+  var soundOffIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="#F4EFE6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 9 3 15 8 15 13 20 13 4 8 9 3 9"></polygon><line x1="16" y1="9" x2="22" y2="15"></line><line x1="22" y1="9" x2="16" y2="15"></line></svg>';
+
+  var allVideos = [];
+  document.querySelectorAll('.ugc-card, .case-visual .frame').forEach(function(card){
+    var video = card.querySelector('video');
+    var playBtn = card.querySelector('[data-role="play"]');
+    var soundBtn = card.querySelector('[data-role="sound"]');
+    if (!video) return;
+    allVideos.push(video);
+
+    function pauseAndReset(){
+      video.pause();
+      card.classList.remove('is-playing');
+    }
+
+    if (playBtn){
+      playBtn.addEventListener('click', function(e){
+        e.stopPropagation();
+        // Pause all other videos first
+        allVideos.forEach(function(v){ if (v !== video) { v.pause(); } });
+        document.querySelectorAll('.ugc-card, .case-visual .frame').forEach(function(c){ if (c !== card) c.classList.remove('is-playing'); });
+        var p = video.play();
+        if (p && p.catch) p.catch(function(){});
+        card.classList.add('is-playing');
+      });
+    }
+
+    video.addEventListener('click', function(){
+      if (!video.paused){ pauseAndReset(); }
+    });
+
+    video.addEventListener('ended', function(){
+      // loop handles playback, but keep state consistent if loop ever disabled
+    });
+
+    if (soundBtn){
+      soundBtn.addEventListener('click', function(e){
+        e.stopPropagation();
+        video.muted = !video.muted;
+        soundBtn.innerHTML = video.muted ? soundOffIcon : soundOnIcon;
+        soundBtn.setAttribute('aria-label', video.muted ? 'Activer le son' : 'Désactiver le son');
+      });
+    }
   });
 })();
 </script>
