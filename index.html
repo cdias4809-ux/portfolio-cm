@@ -49,7 +49,8 @@
   .hero-watermark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:var(--display);font-size:16vw;color:transparent;-webkit-text-stroke:1px rgba(244,239,230,0.06);pointer-events:none;white-space:nowrap;z-index:0;}
   .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr 0.9fr;gap:64px;align-items:center;width:100%;}
   @media(max-width:980px){.hero-grid{grid-template-columns:1fr;}}
-  .hero h1{font-size:clamp(34px,4.6vw,62px);line-height:1.08;}
+  .hero h1{font-size:clamp(34px,4.6vw,54px);line-height:1.08;}
+  @media(min-width:981px){.hero h1{white-space:nowrap;}}
   .hero h1 em{display:block;font-family:var(--italic);font-style:italic;font-weight:300;color:var(--gold);font-size:clamp(24px,3.4vw,48px);margin-top:.25em;}
   .hero p{font-size:17.5px;line-height:1.7;color:var(--cream-dim);max-width:500px;margin:28px 0 36px;}
   .hero p b{color:var(--cream);font-weight:500;}
@@ -94,56 +95,56 @@
   /* --- modal --- */
   .modal-overlay{position:fixed;inset:0;background:rgba(13,27,42,0.85);backdrop-filter:blur(6px);z-index:200;display:none;align-items:center;justify-content:center;padding:28px;}
   .modal-overlay.open{display:flex;}
-  .modal{background:var(--cream);color:var(--navy);max-width:640px;width:100%;max-height:85vh;overflow-y:auto;border-radius:3px;position:relative;box-shadow:0 50px 120px rgba(0,0,0,0.5);animation:modalIn .4s cubic-bezier(.19,1,.22,1);}
+  .modal{background:var(--navy);color:var(--cream);max-width:640px;width:100%;max-height:85vh;overflow-y:auto;border-radius:3px;position:relative;box-shadow:0 50px 120px rgba(0,0,0,0.5);border:1px solid var(--navy2);animation:modalIn .4s cubic-bezier(.19,1,.22,1);}
   @keyframes modalIn{from{opacity:0;transform:translateY(24px) scale(.98);}to{opacity:1;transform:translateY(0) scale(1);}}
-  .modal-bar{display:flex;align-items:center;justify-content:space-between;padding:16px 22px;border-bottom:1px solid rgba(13,27,42,0.12);position:sticky;top:0;background:var(--cream);}
+  .modal-bar{display:flex;align-items:center;justify-content:space-between;padding:16px 22px;border-bottom:1px solid rgba(244,239,230,0.12);position:sticky;top:0;background:var(--navy);}
   .modal-bar .dots{display:flex;gap:6px;}
-  .modal-bar .dots span{width:10px;height:10px;border-radius:50%;background:rgba(13,27,42,0.15);}
-  .modal-bar .fname{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(13,27,42,0.45);}
-  .modal-close{background:none;border:none;font-size:20px;cursor:pointer;color:rgba(13,27,42,0.5);line-height:1;}
+  .modal-bar .dots span{width:10px;height:10px;border-radius:50%;background:rgba(244,239,230,0.15);}
+  .modal-bar .fname{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,239,230,0.45);}
+  .modal-close{background:none;border:none;font-size:20px;cursor:pointer;color:rgba(244,239,230,0.5);line-height:1;}
   .modal-body{padding:30px 32px 40px;}
-  .modal-body .flag{display:inline-block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;background:rgba(138,154,126,0.15);color:#4f5e46;border:1px solid rgba(138,154,126,0.4);border-radius:999px;padding:5px 12px;margin-bottom:18px;}
-  .modal-body h4{font-family:var(--display);font-size:22px;margin:0 0 4px;}
-  .modal-body .sub{font-size:12.5px;color:rgba(13,27,42,0.5);margin-bottom:22px;}
-  .modal-body h5{font-family:var(--display);font-size:13px;letter-spacing:.08em;margin:22px 0 10px;color:#8a6a3a;}
-  .modal-body ul{margin:0;padding-left:18px;font-size:13.5px;line-height:1.85;}
+  .modal-body .flag{display:inline-block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;background:rgba(138,154,126,0.15);color:var(--sauge);border:1px solid rgba(138,154,126,0.4);border-radius:999px;padding:5px 12px;margin-bottom:18px;}
+  .modal-body h4{font-family:var(--display);font-size:22px;margin:0 0 4px;color:var(--cream);}
+  .modal-body .sub{font-size:12.5px;color:rgba(244,239,230,0.5);margin-bottom:22px;}
+  .modal-body h5{font-family:var(--display);font-size:13px;letter-spacing:.08em;margin:22px 0 10px;color:var(--gold);}
+  .modal-body ul{margin:0;padding-left:18px;font-size:13.5px;line-height:1.85;color:var(--cream-dim);}
   .modal-body ul li{margin-bottom:3px;}
   .modal-body .kpi{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px;}
-  .modal-body .kpi div{background:rgba(13,27,42,0.04);border:1px solid rgba(13,27,42,0.1);border-radius:3px;padding:12px 16px;min-width:120px;}
-  .modal-body .kpi div b{display:block;font-family:var(--display);font-size:20px;color:var(--navy);}
-  .modal-body .kpi div small{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(13,27,42,0.5);}
+  .modal-body .kpi div{background:rgba(244,239,230,0.05);border:1px solid rgba(244,239,230,0.12);border-radius:3px;padding:12px 16px;min-width:120px;}
+  .modal-body .kpi div b{display:block;font-family:var(--display);font-size:20px;color:var(--gold);}
+  .modal-body .kpi div small{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(244,239,230,0.5);}
   .modal-body .two-col{display:flex;gap:20px;flex-wrap:wrap;margin-top:4px;}
   .modal-body .two-col>div{flex:1;min-width:180px;}
-  .modal-body .two-col h6{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);margin:0 0 8px;}
+  .modal-body .two-col h6{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:0 0 8px;}
   .modal-body .tunnel{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 4px;}
-  .modal-body .tunnel div{flex:1;min-width:150px;background:rgba(138,154,126,0.08);border:1px solid rgba(138,154,126,0.3);border-radius:3px;padding:12px 14px;}
-  .modal-body .tunnel div b{display:block;font-family:var(--display);font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:#4f5e46;margin-bottom:5px;}
-  .modal-body .tunnel div span{font-size:12px;color:rgba(13,27,42,0.65);line-height:1.55;}
+  .modal-body .tunnel div{flex:1;min-width:150px;background:rgba(138,154,126,0.1);border:1px solid rgba(138,154,126,0.3);border-radius:3px;padding:12px 14px;}
+  .modal-body .tunnel div b{display:block;font-family:var(--display);font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--sauge);margin-bottom:5px;}
+  .modal-body .tunnel div span{font-size:12px;color:rgba(244,239,230,0.65);line-height:1.55;}
   .modal-body .palette{display:flex;gap:10px;margin:10px 0 4px;align-items:center;}
-  .modal-body .palette span{width:30px;height:30px;border-radius:50%;border:1px solid rgba(13,27,42,0.15);display:inline-block;}
-  .modal-body .palette small{font-size:10px;color:rgba(13,27,42,0.45);margin-left:4px;}
+  .modal-body .palette span{width:30px;height:30px;border-radius:50%;border:1px solid rgba(244,239,230,0.25);display:inline-block;}
+  .modal-body .palette small{font-size:10px;color:rgba(244,239,230,0.45);margin-left:4px;}
   .modal-body .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin:10px 0 4px;}
-  .modal-body .cal-grid .cal-dow{font-size:9px;letter-spacing:.07em;text-transform:uppercase;color:rgba(13,27,42,0.4);text-align:center;padding-bottom:4px;}
-  .modal-body .cal-grid .cal-day{background:rgba(13,27,42,0.03);border:1px solid rgba(13,27,42,0.08);border-radius:3px;min-height:52px;padding:4px 5px;font-size:10px;position:relative;}
+  .modal-body .cal-grid .cal-dow{font-size:9px;letter-spacing:.07em;text-transform:uppercase;color:rgba(244,239,230,0.4);text-align:center;padding-bottom:4px;}
+  .modal-body .cal-grid .cal-day{background:rgba(244,239,230,0.04);border:1px solid rgba(244,239,230,0.1);border-radius:3px;min-height:52px;padding:4px 5px;font-size:10px;position:relative;}
   .modal-body .cal-grid .cal-day.empty{background:transparent;border-color:transparent;}
-  .modal-body .cal-grid .cal-day .d-num{font-family:var(--display);font-size:10.5px;color:rgba(13,27,42,0.4);}
-  .modal-body .cal-grid .cal-day .d-tag{display:block;margin-top:3px;font-size:8.3px;line-height:1.3;padding:2px 4px;border-radius:2px;background:rgba(138,154,126,0.18);color:#4f5e46;}
+  .modal-body .cal-grid .cal-day .d-num{font-family:var(--display);font-size:10.5px;color:rgba(244,239,230,0.45);}
+  .modal-body .cal-grid .cal-day .d-tag{display:block;margin-top:3px;font-size:8.3px;line-height:1.3;padding:2px 4px;border-radius:2px;background:rgba(138,154,126,0.2);color:var(--sauge);}
   .modal-body .cal-grid .cal-day.active{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold);}
-  .modal-body .cal-grid .cal-day.active .d-tag{background:rgba(198,161,91,0.28);color:#8a6a3a;}
-  .modal-body .post-detail{margin-top:22px;border-top:1px dashed rgba(13,27,42,0.18);padding-top:18px;}
+  .modal-body .cal-grid .cal-day.active .d-tag{background:rgba(198,161,91,0.3);color:var(--gold);}
+  .modal-body .post-detail{margin-top:22px;border-top:1px dashed rgba(244,239,230,0.2);padding-top:18px;}
   .modal-body .post-detail .pd-head{display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap;}
-  .modal-body .post-detail .pd-head b{font-family:var(--display);font-size:15px;}
-  .modal-body .post-detail .pd-tag{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;background:rgba(198,161,91,0.2);color:#8a6a3a;border-radius:999px;padding:3px 10px;}
+  .modal-body .post-detail .pd-head b{font-family:var(--display);font-size:15px;color:var(--cream);}
+  .modal-body .post-detail .pd-tag{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;background:rgba(198,161,91,0.22);color:var(--gold);border-radius:999px;padding:3px 10px;}
   .modal-body .post-detail .pd-row{margin-bottom:11px;}
-  .modal-body .post-detail .pd-row b{display:block;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--navy);margin-bottom:4px;}
-  .modal-body .post-detail .pd-row span,.modal-body .post-detail .pd-row p{font-size:12.5px;color:rgba(13,27,42,0.75);line-height:1.65;}
-  .modal-body .post-detail .pd-row ol{margin:0;padding-left:17px;font-size:12.5px;line-height:1.75;color:rgba(13,27,42,0.75);}
+  .modal-body .post-detail .pd-row b{display:block;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;}
+  .modal-body .post-detail .pd-row span,.modal-body .post-detail .pd-row p{font-size:12.5px;color:var(--cream-dim);line-height:1.65;}
+  .modal-body .post-detail .pd-row ol{margin:0;padding-left:17px;font-size:12.5px;line-height:1.75;color:var(--cream-dim);}
   .modal-body .evo{list-style:none;margin:10px 0 4px;padding:0;}
-  .modal-body .evo li{display:flex;justify-content:space-between;align-items:baseline;padding:8px 0;border-bottom:1px solid rgba(13,27,42,0.08);font-size:12.5px;}
-  .modal-body .evo li b{color:var(--navy);font-weight:500;}
+  .modal-body .evo li{display:flex;justify-content:space-between;align-items:baseline;padding:8px 0;border-bottom:1px solid rgba(244,239,230,0.1);font-size:12.5px;}
+  .modal-body .evo li b{color:var(--cream);font-weight:500;}
   .modal-body .evo li span{font-family:var(--display);font-size:14px;}
-  .modal-body .evo li span.up{color:#4f5e46;}
-  .modal-body .evo li span.down{color:#a85a3f;}
+  .modal-body .evo li span.up{color:var(--sauge);}
+  .modal-body .evo li span.down{color:#d08a6f;}
 
   /* --- UGC grid --- */
   .ugc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;}
@@ -262,7 +263,7 @@
       </div>
     </div>
     <div class="hero-visual" data-reveal data-reveal-delay="200">
-      <img src="assets/work-original-traiteur.png" alt="Création de contenu — exemple">
+      <img src="assets/hero-chris-club.jpg" alt="Chris">
     </div>
   </div>
 </header>
@@ -441,11 +442,11 @@
 <!-- ===================== ABOUT ===================== -->
 <section class="section">
   <div class="wrap about-grid">
-    <img src="assets/about-chris-vegas.jpg" alt="Chris" data-reveal>
+    <img src="assets/about-chris-wynn.jpg" alt="Chris" data-reveal>
     <div data-reveal data-reveal-delay="150">
       <div class="eyebrow">À propos</div>
       <h2 style="font-size:clamp(30px,4vw,48px);margin-top:14px;">Un seul interlocuteur, <em style="font-style:italic;font-family:var(--italic);color:var(--gold);">stratégie et création.</em></h2>
-      <p style="font-size:16px;line-height:1.8;color:var(--cream-dim);max-width:500px;margin-top:20px;">Basé à Montpellier et Bordeaux, je travaille avec des petites structures qui veulent une gestion de réseaux sociaux cohérente, sans jongler entre un community manager et un créateur de contenu séparés.</p>
+      <p style="font-size:16px;line-height:1.8;color:var(--cream-dim);max-width:500px;margin-top:20px;">Basé à Montpellier et Bordeaux, je travaille avec des marques et créateurs de toutes tailles, en France comme à l'international, qui veulent une gestion de réseaux sociaux cohérente, sans jongler entre un community manager et un créateur de contenu séparés.</p>
       <div class="about-tags">
         <span>Créatif</span><span>Réactif</span><span>Organisé</span><span>Autonome</span>
       </div>
@@ -478,7 +479,7 @@
         <span class="flag">Exemple fictif — architecture type</span>
         <h4>Audit Compte Instagram</h4>
         <div class="sub">Compte : @cafe.lucine (exemple) · Période observée : Juillet 2026</div>
-        <p style="font-size:13.5px;line-height:1.75;color:rgba(13,27,42,0.7);margin-bottom:18px;">Avant de produire le moindre contenu, je prends deux à trois jours pour poser un état des lieux complet et objectif du compte : qui regarde, qui s'abonne, ce qui marche déjà et ce qui freine la croissance. Ce document sert de socle à toutes les décisions prises ensuite, et c'est à ces mêmes chiffres que je comparerai chaque reporting mensuel.</p>
+        <p style="font-size:13.5px;line-height:1.75;color:var(--cream-dim);margin-bottom:18px;">Avant de produire le moindre contenu, je prends deux à trois jours pour poser un état des lieux complet du compte, et je comprends l'objectif du compte : qui regarde, qui s'abonne, ce qui marche déjà et ce qui freine la croissance. Ce document sert de socle à toutes les décisions prises ensuite, et c'est à ces mêmes chiffres que je comparerai chaque reporting mensuel.</p>
         <div class="kpi">
           <div><b>3,2%</b><small>Taux d'engagement</small></div>
           <div><b>4 200</b><small>Abonnés</small></div>
@@ -516,7 +517,7 @@
         <span class="flag">Exemple fictif — architecture type</span>
         <h4>Stratégie</h4>
         <div class="sub">Café Lucine (exemple) · Cas pédagogique</div>
-        <p style="font-size:13.5px;line-height:1.75;color:rgba(13,27,42,0.7);margin-bottom:18px;">À partir des constats de l'audit, je construis un plan concret : ce qu'on dit, à qui, avec quels formats et à quel rythme. L'objectif est qu'à tout moment, publier un contenu réponde à une question simple : quel pilier sert-il, et à quelle étape du tunnel sert-il à faire avancer l'audience ?</p>
+        <p style="font-size:13.5px;line-height:1.75;color:var(--cream-dim);margin-bottom:18px;">À partir des constats de l'audit, je construis un plan concret : ce qu'on dit, à qui, avec quels formats et à quel rythme. L'objectif est qu'à tout moment, publier un contenu réponde à une question simple : quel pilier sert-il, et à quelle étape du tunnel sert-il à faire avancer l'audience ?</p>
         <h5>Positionnement</h5>
         <ul><li><b>Qui on est à l'écran :</b> une équipe chaleureuse, reconnaissable, jamais une marque anonyme</li><li><b>Message central :</b> ici, on connaît votre prénom et votre commande — le café vu comme un deuxième salon</li><li><b>Ce que l'audience doit ressentir :</b> l'envie d'y être, comme si elle faisait déjà partie des habitués</li></ul>
         <h5>Piliers de contenu</h5>
@@ -543,7 +544,7 @@
         <span class="flag">Exemple fictif — architecture type</span>
         <h4>Calendrier éditorial</h4>
         <div class="sub">Café Lucine (exemple) · Juin 2026 · 3 posts / semaine</div>
-        <p style="font-size:13.5px;line-height:1.75;color:rgba(13,27,42,0.7);margin-bottom:16px;">Une fois la stratégie posée, je la traduis en planning concret, mois par mois. Chaque publication est rattachée à un pilier de contenu. Clic sur un jour → le détail complet apparaît, avec l'inspiration et le script prêts à tourner.</p>
+        <p style="font-size:13.5px;line-height:1.75;color:var(--cream-dim);margin-bottom:16px;">Une fois la stratégie posée, je la traduis en planning concret, mois par mois. Chaque publication est rattachée à un pilier de contenu. Clic sur un jour → le détail complet apparaît, avec l'inspiration et le script prêts à tourner.</p>
         <div class="cal-grid">
           <div class="cal-dow">Lun</div><div class="cal-dow">Mar</div><div class="cal-dow">Mer</div><div class="cal-dow">Jeu</div><div class="cal-dow">Ven</div><div class="cal-dow">Sam</div><div class="cal-dow">Dim</div>
           <div class="cal-day empty"></div>
@@ -606,7 +607,7 @@
         <span class="flag">Exemple fictif — architecture type</span>
         <h4>Reporting : analyse des statistiques</h4>
         <div class="sub">Café Lucine (exemple) · Juillet 2026 · comparé à Juin 2026</div>
-        <p style="font-size:13.5px;line-height:1.75;color:rgba(13,27,42,0.7);margin-bottom:18px;">Chaque mois, je reprends les statistiques du compte pour vérifier ce qui fonctionne vraiment et ajuster la stratégie en conséquence. Même structure que l'audit initial, mais ici chaque indicateur est comparé au mois précédent pour mesurer un vrai taux d'évolution, pas juste une valeur isolée.</p>
+        <p style="font-size:13.5px;line-height:1.75;color:var(--cream-dim);margin-bottom:18px;">Chaque mois, je reprends les statistiques du compte pour vérifier ce qui fonctionne vraiment et ajuster la stratégie en conséquence. Même structure que l'audit initial, mais ici chaque indicateur est comparé au mois précédent pour mesurer un vrai taux d'évolution, pas juste une valeur isolée.</p>
         <div class="kpi">
           <div><b>+38%</b><small>Portée</small></div>
           <div><b>+22%</b><small>Engagement</small></div>
