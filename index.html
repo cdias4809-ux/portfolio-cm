@@ -27,8 +27,6 @@
   .pill.solid:hover{background:var(--cream);border-color:var(--cream);color:var(--navy);}
   h1,h2,h3{margin:0;font-family:var(--display);font-weight:500;}
   .section{padding:100px 0;position:relative;}
-  .section-cream{background:var(--cream);color:var(--navy);}
-  .section-cream .eyebrow{color:#8a6a3a;}
   .label-num{font-family:var(--display);font-size:13px;letter-spacing:.3em;color:var(--gold);}
 
   /* --- nav --- */
@@ -76,8 +74,6 @@
   .sec-head h2 em{font-style:italic;font-family:var(--italic);color:var(--gold);}
   .sec-head p{max-width:620px;font-size:16.5px;line-height:1.75;color:var(--cream-dim);}
   .sec-head p b{color:var(--gold);font-weight:500;}
-  .section-cream .sec-head p{color:rgba(13,27,42,0.65);}
-  .section-cream .sec-head p b{color:#8a6a3a;}
 
   /* --- method cards (onboarding) --- */
   .method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
@@ -91,6 +87,23 @@
   .method-card .cta{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-top:auto;padding-top:22px;}
   .method-card .cta svg{width:12px;height:12px;transition:transform .3s;}
   .method-card:hover .cta svg{transform:translateX(4px);}
+  /* --- operational block (step 05) --- */
+  .ops-block{margin-top:18px;background:rgba(255,255,255,0.03);border:1px solid var(--navy2);border-radius:2px;padding:34px 30px;}
+  .ops-head{display:flex;gap:22px;align-items:flex-start;flex-wrap:wrap;margin-bottom:28px;}
+  .ops-head .num{font-family:var(--display);font-size:36px;color:var(--gold);letter-spacing:.04em;line-height:1;}
+  .ops-head h3{font-size:22px;}
+  .ops-head p{font-size:14.5px;color:var(--cream-dim);line-height:1.65;margin-top:10px;max-width:560px;}
+  .ops-icons{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  @media(max-width:700px){.ops-icons{grid-template-columns:repeat(2,1fr);}}
+  .ops-icon{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;padding:22px 12px;border:1px solid var(--navy2);border-radius:2px;background:rgba(255,255,255,0.02);transition:border-color .35s,background .35s,transform .35s;}
+  .ops-icon:hover{border-color:var(--gold);background:rgba(198,161,91,0.06);transform:translateY(-4px);}
+  .ops-icon svg{width:26px;height:26px;color:var(--gold);}
+  .ops-icon span{font-size:12px;letter-spacing:.03em;color:var(--cream-dim);line-height:1.4;}
+  .ops-arrow{display:flex;justify-content:center;margin-top:30px;}
+  .ops-arrow a{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--navy2);color:var(--gold);animation:opsBounce 2.2s ease-in-out infinite;transition:border-color .3s,background .3s;}
+  .ops-arrow a:hover{border-color:var(--gold);background:rgba(198,161,91,0.08);}
+  .ops-arrow svg{width:18px;height:18px;}
+  @keyframes opsBounce{0%,100%{transform:translateY(0);}50%{transform:translateY(7px);}}
 
   /* --- modal --- */
   .modal-overlay{position:fixed;inset:0;background:rgba(13,27,42,0.85);backdrop-filter:blur(6px);z-index:200;display:none;align-items:center;justify-content:center;padding:28px;}
@@ -199,21 +212,6 @@
   .ig-foot{display:flex;justify-content:space-between;align-items:center;font-size:10.5px;color:var(--cream-dim);padding:14px 2px 2px;border-top:1px solid rgba(244,239,230,0.08);margin-top:14px;}
   .ig-foot a{color:var(--gold);letter-spacing:.08em;text-transform:uppercase;font-size:10px;}
 
-  /* --- services --- */
-  .serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-  @media(max-width:860px){.serv-grid{grid-template-columns:repeat(2,1fr);}}
-  @media(max-width:560px){.serv-grid{grid-template-columns:1fr;}}
-  .serv-card{background:#fff;border:1px solid rgba(13,27,42,0.08);border-radius:3px;padding:32px 26px;transition:transform .35s,box-shadow .35s;}
-  .serv-card:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(13,27,42,0.12);}
-  .serv-card .ic{width:34px;height:34px;border-radius:50%;background:rgba(198,161,91,0.15);display:flex;align-items:center;justify-content:center;color:#8a6a3a;margin-bottom:18px;font-family:var(--display);font-size:14px;}
-  .serv-card h3{font-size:19px;margin-bottom:10px;}
-  .serv-card p{font-size:14px;line-height:1.7;color:rgba(13,27,42,0.6);}
-  .serv-block{margin-bottom:46px;}
-  .serv-block:last-child{margin-bottom:0;}
-  .serv-block-label{display:flex;align-items:baseline;gap:14px;margin-bottom:22px;flex-wrap:wrap;}
-  .serv-block-label h3{font-family:var(--display);font-size:25px;color:var(--navy);}
-  .serv-block-label span{font-size:13.5px;color:rgba(13,27,42,0.55);}
-
   /* --- about --- */
   .about-grid{display:grid;grid-template-columns:0.95fr 1.05fr;gap:56px;align-items:center;}
   @media(max-width:900px){.about-grid{grid-template-columns:1fr;}}
@@ -238,7 +236,6 @@
     <a href="#methode">Méthode</a>
     <a href="#ugc">Création</a>
     <a href="#gestion">Gestion de compte</a>
-    <a href="#services">Services</a>
   </div>
   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chrisdias.ugc@gmail.com&su=Collaboration%20Community%20Management" target="_blank" rel="noopener" class="nav-cta">Collaborer</a>
   <button class="burger" aria-label="Menu">☰</button>
@@ -305,6 +302,25 @@
         <h3>Reporting</h3>
         <p>Analyse mensuelle des statistiques et ajustement de la stratégie.</p>
         <div class="cta">Voir l'exemple <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      </div>
+    </div>
+
+    <div class="ops-block" data-reveal data-reveal-delay="400">
+      <div class="ops-head">
+        <div class="num">05</div>
+        <div>
+          <h3>Exécution opérationnelle</h3>
+          <p>Le travail mené au quotidien, une fois le cadre posé : je tourne et monte le contenu, je publie, je gère les stories et j'anime la communauté.</p>
+        </div>
+      </div>
+      <div class="ops-icons">
+        <div class="ops-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg><span>Création de contenu</span></div>
+        <div class="ops-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 4"><circle cx="12" cy="12" r="9"/></svg><span>Stories</span></div>
+        <div class="ops-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg><span>Community management</span></div>
+        <div class="ops-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>Publication</span></div>
+      </div>
+      <div class="ops-arrow">
+        <a href="#ugc" aria-label="Voir des exemples de création de contenu UGC"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="4" x2="12" y2="20"/><polyline points="6 14 12 20 18 14"/></svg></a>
       </div>
     </div>
   </div>
@@ -406,34 +422,6 @@
           <span>Cuisine maison · Méditerranéen · Éco · 757 avis Google</span>
           <a href="https://www.instagram.com/loriginal_restaurant/" target="_blank" rel="noopener">Voir le compte →</a>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== SERVICES ===================== -->
-<section class="section section-cream" id="services">
-  <div class="wrap">
-    <div class="sec-head" data-reveal>
-      <h2>Services.</h2>
-      <p>Une gestion de compte complète, de l'onboarding jusqu'au travail opérationnel du mois, avec <b>un seul interlocuteur</b> du début à la fin.</p>
-    </div>
-
-    <div class="serv-block">
-      <div class="serv-block-label" data-reveal><h3>Onboarding</h3><span>La prise d'informations et la construction du cadre</span></div>
-      <div class="serv-grid">
-        <div class="serv-card" data-reveal data-reveal-delay="0"><div class="ic">01</div><h3>Audit</h3><p>État des lieux complet du compte : profil, contenu, engagement, communauté.</p></div>
-        <div class="serv-card" data-reveal data-reveal-delay="80"><div class="ic">02</div><h3>Stratégie</h3><p>Création de la stratégie si elle n'existe pas encore, ou restructuration complète si elle est déjà en place.</p></div>
-        <div class="serv-card" data-reveal data-reveal-delay="160"><div class="ic">03</div><h3>Calendrier éditorial</h3><p>Planification du contenu en amont, format par format, semaine par semaine.</p></div>
-      </div>
-    </div>
-
-    <div class="serv-block">
-      <div class="serv-block-label" data-reveal><h3>Opérationnel</h3><span>Le travail mené au quotidien, une fois le cadre posé</span></div>
-      <div class="serv-grid">
-        <div class="serv-card" data-reveal data-reveal-delay="0"><div class="ic">04</div><h3>Community management</h3><p>Gestion quotidienne : publications, stories, modération, interactions.</p></div>
-        <div class="serv-card" data-reveal data-reveal-delay="80"><div class="ic">05</div><h3>Création de contenu</h3><p>Tournage et montage de vidéos UGC adaptées à votre univers de marque.</p></div>
-        <div class="serv-card" data-reveal data-reveal-delay="160"><div class="ic">06</div><h3>Reporting</h3><p>Analyse mensuelle des statistiques et ajustement continu de la stratégie.</p></div>
       </div>
     </div>
   </div>
